@@ -23,10 +23,10 @@
 ### tomoyatt
 
 - Y：やったこと
- - 要件定義
- - 開発環境構築
-   - DockerDesktop、GitHubCLIのインストール
- - Issue#2 
+  - 要件定義
+  - 開発環境構築
+    - DockerDesktop、GitHubCLIのインストール
+  - Issue#2 
 - W：わかったこと
   - 環境整備の工数を考慮しきれていなかった
     - とくにDockerインストール時は権限の問題で起動に時間がかかった
