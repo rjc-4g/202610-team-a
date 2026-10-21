@@ -32,6 +32,21 @@
       "Bash(docker system prune:*)",
       "Read(./.env)",
       "Read(./.env.*)"
+    ],
+    "ask": [
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git merge:*)",
+      "Bash(git rebase:*)",
+      "Bash(gh pr create:*)",
+      "Bash(gh pr merge:*)",
+      "Bash(gh pr edit:*)",
+      "Bash(gh pr comment:*)",
+      "Bash(gh pr close:*)",
+      "Bash(gh issue create:*)",
+      "Bash(gh issue close:*)",
+      "Bash(gh issue comment:*)",
+      "Bash(gh issue edit:*)"
     ]
   }
 }

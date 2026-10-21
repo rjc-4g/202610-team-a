@@ -32,7 +32,11 @@
 - ブランチ名: `feature/<内容>`、`fix/<内容>`、`docs/<内容>`。
 - 1 Issue = 1 機能を目安にし、PR の説明に対応する Issue を書く。
 - コミットメッセージは日本語で、1 コミット 1 目的にする。
-- commit・push・PR 作成は、ユーザから依頼があったときだけ行う。
+- **外部に影響する Git 操作は、実行前に必ずユーザへ確認し、明示的な承認を得てから行う**。対象は `git commit`、`git push`、`git merge`、PR の作成・マージ・編集、Issue の作成・クローズ・コメント。
+  - 「進めてください」などの包括的な指示は承認とみなさない。操作ごとに、内容(ブランチ、対象ファイル、メッセージ、宛先)を示して承認を得る。
+  - 承認は、その操作 1 回に限る。以降の同種の操作には引き継がない。
+  - `.claude/settings.json` の `ask` にも設定済み。許可を求められたら、内容を確認して判断する。
+- コミットメッセージは `.gitmessage`、PR の説明は `.github/pull_request_template.md` の形式に従う。`.gitmessage` は `git config commit.template .gitmessage` で有効にする。
 
 ## 開発ルール
 
