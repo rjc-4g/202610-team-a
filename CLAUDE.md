@@ -11,7 +11,11 @@
 
 - Next.js(TypeScript)+ PostgreSQL
 - Docker / Docker Compose(アプリと DB をコンテナ化し、`docker compose up` で起動できる状態を保つ)
-- ORM・認証ライブラリ・テスト方針は設計時に決める。決まったらこの節を更新する。
+- ORM: Prisma
+- 認証: 自前の簡易セッション認証(Cookie + DB のセッション、bcrypt)。認可はサーバ側で必ず検査する
+- 画面: App Router のサーバ側生成(Server Component + Server Action)
+- テスト: Vitest。DB・Next.js に依存しないロジックのみ自動テストし、権限検査と画面は手動確認する
+- 決定の理由は `docs/design-decisions.md` を参照
 
 ## ドキュメント
 
