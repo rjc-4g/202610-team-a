@@ -2,6 +2,18 @@
 
 社内向けの日程調整 Web アプリ(学習目的・開発環境のみ)。要件は [docs/requirements.md](docs/requirements.md) を参照。
 
+- 概要
+  - 最適日の提案
+  - ログイン
+    - 管理者：イベント作成・回答状況の確認
+    - ユーザ：回答の登録
+- 目的
+  - アプリ
+    - グループ活動の日程調整の円滑化
+  - 学習
+    - Git(GitHub)・Docker・AI
+    - Dockerの開発環境での動作をゴールとする
+
 ## 起動方法
 
 前提: Docker / Docker Compose
@@ -22,3 +34,11 @@
 
 - 停止: `docker compose down`
 - DB のパスワードは初回起動時に設定される。あとから変える場合は `docker compose down -v` で DB のデータごと削除してから起動し直す
+
+## 開発ルール
+
+https://github.com/rjc-4g/Document
+
+## Author
+
+[株式会社ＲＪＣ](https://www.r-jc.jp/) システム開発部第4グループ
