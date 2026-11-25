@@ -6,7 +6,7 @@
 
 前提: Docker / Docker Compose
 
-1. `.env.example` をコピーして `.env` を作り、パスワードを設定する(`POSTGRES_PASSWORD` と `DATABASE_URL` は同じ値にする)
+1. `.env.example` をコピーして `.env` を作り、`POSTGRES_PASSWORD` にパスワードを設定する(`DATABASE_URL` は `docker-compose.yml` が組み立てる。記号を含むパスワードは URL に使えないため、英数字にする)
 
    ```sh
    cp .env.example .env
